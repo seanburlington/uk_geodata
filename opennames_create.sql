@@ -1,0 +1,37 @@
+DROP TABLE IF EXISTS opennames;
+Create table opennames (
+    ID varchar(40), --  MAX found is 36 
+    NAMES_URI varchar(255), -- max 72 
+    NAME1 varchar(255),
+    NAME1_LANG varchar(255),
+    NAME2 varchar(255),
+    NAME2_LANG varchar(255),
+    TYPE varchar(20),
+    LOCAL_TYPE varchar(55),
+    GEOMETRY_X INT,
+    GEOMETRY_Y INT,
+    MOST_DETAIL_VIEW_RES INT,
+    LEAST_DETAIL_VIEW_RES INT,
+    MBR_XMIN INT,
+    MBR_YMIN INT,
+    MBR_XMAX INT,
+    MBR_YMAX INT,
+    POSTCODE_DISTRICT varchar(4),
+    POSTCODE_DISTRICT_URI varchar(255),
+    POPULATED_PLACE varchar(255),
+    POPULATED_PLACE_URI varchar(255),
+    POPULATED_PLACE_TYPE varchar(255),
+    DISTRICT_BOROUGH varchar(255),
+    DISTRICT_BOROUGH_URI varchar(255),
+    DISTRICT_BOROUGH_TYPE varchar(255),
+    COUNTY_UNITARY varchar(255),
+    COUNTY_UNITARY_URI varchar(255),
+    COUNTY_UNITARY_TYPE varchar(255),
+    REGION varchar(255),
+    REGION_URI varchar(255),
+    COUNTRY varchar(255),
+    COUNTRY_URI varchar(255),
+    RELATED_SPATIAL_OBJECT varchar(255),
+    SAME_AS_DBPEDIA varchar(255),
+    SAME_AS_GEONAMES varchar(255)
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
